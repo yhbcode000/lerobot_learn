@@ -1,0 +1,31 @@
+# Robot (Follower) Hardware Settings
+robot:
+  type: so101_follower
+  port: /dev/ttyACM0
+  id: R12255108
+  disable_torque_on_disconnect: true
+  cameras:
+    handeye:
+      type: opencv
+      index_or_path: 4
+      width: 640
+      height: 360
+      fps: 30
+
+# Teleop (Leader) Hardware Settings
+teleop:
+  type: so101_leader
+  port: /dev/ttyACM1
+  id: R07255108
+
+# Recording / Dataset Settings
+dataset:
+  repo_id: yhbcode000/so101_grab
+  num_episodes: 10
+  episode_time_s: 30
+  reset_time_s: 30
+  single_task: "Grab the piece"
+  push_to_hub: false
+
+# Debugging
+display_data: true
