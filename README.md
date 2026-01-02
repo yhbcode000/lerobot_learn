@@ -8,7 +8,7 @@ Navigate to the device-specific directory to install calibration parameters and 
 
 ```bash
 # Navigate to the driver directory
-cd /media/shirox/Storage/ubuntu_workspace/lerobot/254218-R12255108
+cd /media/shirox/Storage/ubuntu_workspace/lerobot_learn/254218-R12255108
 
 # Install calibration parameters
 bash install_calib_params.sh
@@ -26,7 +26,7 @@ Prepare the workspace by activating the virtual environment and synchronizing de
 
 ```bash
 # Return to the main workspace
-cd /media/shirox/Storage/ubuntu_workspace/lerobot
+cd /media/shirox/Storage/ubuntu_workspace/lerobot_learn
 
 # Sync project dependencies
 uv sync
